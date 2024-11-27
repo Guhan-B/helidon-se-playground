@@ -1,0 +1,13 @@
+sources:
+  - type: "environment-variables"
+  - type: "system-properties"
+  - type: "file"
+    properties:
+      path: "C:\\Users\\bkguh\\application.yaml"
+      polling-strategy:
+        type: "regular"
+        properties:
+          interval: "PT1S"
+  - type: "classpath"
+    properties:
+      resource: "application.yaml"

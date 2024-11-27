@@ -1,0 +1,20 @@
+application:
+  name: "helidon-configuration-classpath"
+  deployment:
+    platform: "AWS"
+  data:
+    providers:
+      - name: "MongoDB"
+        priority: 1
+      - name: "Oracle"
+        priority: 1
+      - name: "MySQL"
+        priority: 2
+      - name: "Redis"
+        priority: 2
+  value:
+    string: "Hello, World!"
+    int: 1
+    long: 2
+    double: 3.4
+    boolean: true
